@@ -1451,7 +1451,7 @@ endif
 ifeq ($(USE_PREBUILT_CHROMIUM),1)
 ifneq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 	@echo "Running Chromium prebuilt setup script..."
-	$(hide) . $(TOPDIR)vendor/pa/utils/chromium_prebuilt.sh $(TOP)
+	$(hide) . $(TOPDIR)vendor/venture/utils/chromium_prebuilt.sh $(TOP)
 endif
 endif
 	@echo -e ${PRT_CPL}"Package complete: $(CUSTOM_TARGET_PACKAGE)"${CL_RST}
